@@ -1,0 +1,90 @@
+/* reset code */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline : none;
+}
+
+:root{
+    --primary-color : rgb(228, 25, 177);
+    --secondary-color : rgba(245, 17, 214, 0.9);
+    --padding : 0.5rem;
+    --transition: all 0.3s;
+    --border-radius : 0.6rem;
+    --box-shadow : 0.1rem 0.1rem 0.8rem rgba(205,202,202,0.5);
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+img {
+    width : 100%;
+}
+
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navbar */
+
+nav{
+    font-family: fantasy;
+    font-size: 1.2rem;
+    position: sticky;
+    top:0;
+    left : 0;
+    z-index: 200;
+}
+
+.nav-upper{
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    padding : var(--padding);
+ 
+}
+
+.nav-list{
+    transition: var(--transition);
+}
+
+.nav-list:hover{
+    text-decoration: overline;
+}
+
+.nav-link{
+    color :white;
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    color : black;
+}
+
+.profile-icon{
+    width : 3rem;
+    height : 3rem;
+    border-radius: 50%;
+    border : 1px solid white;
+    filter : saturate(0);
+}
+
+.profile-icon:hover{
+    filter : saturate(1);
+}
+
+.nav-lower{
+    min-height: 10vh;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.nav-brand{
+    font-size: 2rem;
+
+}
